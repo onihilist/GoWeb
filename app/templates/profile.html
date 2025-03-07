@@ -14,9 +14,9 @@
         </div>
         <div style="display: flex; justify-content: center; align-items: center;">
             {{ if .UserAvatarURL }}
-                <img src="{{ .UserAvatarURL }}" alt="Profile Picture" class="profile-avatar" style="width: 120px; height: 120px; margin-left: 10px; border: 2px solid black; border-radius: 50%;">
+                <img src="{{ .UserAvatarURL }}" alt="Profile Picture" class="profile-avatar" style="width: 120px; height: 120px; margin-bottom: 20px; border: 2px solid black; border-radius: 50%;">
             {{ else }}
-                <img src="/public/img/default_user.png" alt="Default Profile Picture" class="profile-avatar" style="width: 120px; height: 120px; margin-left: 10px; border: 2px solid black; border-radius: 50%;">
+                <img src="/public/img/default_user.png" alt="Default Profile Picture" class="profile-avatar" style="width: 120px; height: 120px; margin-bottom: 20px; border: 2px solid black; border-radius: 50%;">
             {{ end }}
         </div>
 
@@ -26,10 +26,6 @@
                 <tr>
                     <th>Username</th>
                     <td>{{ .Username }}</td>
-                </tr>
-                <tr>
-                    <th>Password</th>
-                    <td>••••••••</td> <!-- Masqué pour des raisons de sécurité -->
                 </tr>
                 <tr>
                     <th>Email</th>

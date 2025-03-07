@@ -18,3 +18,4 @@ RUN sass public/scss:public/css
 EXPOSE 8080
 
 CMD ["go", "run", "main.go"]
+CMD ["go", "test", "templates/tests/*"]

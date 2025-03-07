@@ -102,7 +102,6 @@ func (uc *UserController) GetUser(c *gin.Context) {
 			"SessionID":      visitor.SessionID,
 			"UserId":         user.ID,
 			"Username":       user.Username,
-			"Password":       user.Password, // Consider omitting this
 			"Email":          user.Email,
 			"Phone":          user.Phone,
 			"CreationDate":   user.CreationDate,
@@ -289,7 +288,7 @@ func (uc *UserController) UserSettings(c *gin.Context) {
 			"AvatarURL": user.AvatarURL,
 			"Username":  user.Username,
 			"Email":     user.Email,
-			"Phone":     user.Phone, // Add phone field
+			"Phone":     user.Phone,
 		})
 		//}
 	} else {
