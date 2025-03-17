@@ -1,0 +1,12 @@
+include:
+    {{IncludeGolang}}
+    {{IncludeMariaDB}}
+    {{IncludePostgreSQL}}
+    {{IncludeNginx}}
+
+volumes:
+  maria_data:
+  
+networks:
+  my_network:
+    driver: bridge

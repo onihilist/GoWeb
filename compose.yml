@@ -1,11 +1,12 @@
 include:
-  - docker.conf/compose-maria.yml
-  # - docker.conf/compose-nginx.yml
-  - docker.conf/compose-golang.yml
+    - docker.conf/compose-golang.yml
+    - docker.conf/compose-maria.yml
+    # - docker.conf/compose-postgresql.yml
+    # - docker.conf/compose-nginx.yml
 
 volumes:
   maria_data:
-
+  
 networks:
-  labnet:
+  my_network:
     driver: bridge
