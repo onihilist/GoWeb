@@ -4,11 +4,11 @@ If it's the first time :
     - $ make setup-env
     - $ make up
 
-If you want to restart to apply Golang changes :
+If you want to restart and apply Golang changes :
 
     - $ make restartapp
 
-If you want to restart to apply MariaDB changes :
+If you want to restart and apply MariaDB changes :
 
     - $ make restart
 
